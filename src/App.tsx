@@ -31,7 +31,7 @@ export default function App() {
       <section className="relative h-[90vh] min-h-[600px] flex flex-col items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/WhatsApp%20Image%202026-03-18%20at%203.38.04%20PM%20(1).jpeg" 
+            src="/gallery-1.jpeg" 
             alt="Ungarische Puszta Sonnenuntergang" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -136,7 +136,7 @@ export default function App() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           <FadeIn>
             <img 
-              src="/WhatsApp%20Image%202026-03-18%20at%203.38.04%20PM%20(2).jpeg" 
+              src="/gallery-2.jpeg" 
               alt="Ein Raum, in dem du nichts erreichen musst" 
               className="w-full h-[600px] object-cover rounded-2xl shadow-sm"
               referrerPolicy="no-referrer"
@@ -202,7 +202,7 @@ export default function App() {
             <FadeIn>
               <div className="flex flex-col items-center text-center">
                 <img 
-                  src="/WhatsApp%20Image%202026-03-18%20at%203.38.05%20PM%20(15).jpeg" 
+                  src="/gallery-13.jpeg" 
                   alt="Noemi" 
                   className="w-64 h-64 rounded-full object-cover object-top mb-8 border-4 border-brand-bg shadow-sm"
                   referrerPolicy="no-referrer"
@@ -392,7 +392,7 @@ export default function App() {
               ))}
             </ul>
             <img 
-              src="/WhatsApp%20Image%202026-03-18%20at%203.38.04%20PM%20(5).jpeg" 
+              src="/gallery-5.jpeg" 
               alt="Puszta Landschaft" 
               className="w-full h-48 object-cover rounded-xl mt-auto"
               referrerPolicy="no-referrer"

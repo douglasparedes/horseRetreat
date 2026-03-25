@@ -2,43 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X } from 'lucide-react';
 
-const images = [
-  "WhatsApp Image 2026-03-18 at 3.38.04 PM (1).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.04 PM (2).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.04 PM (3).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.04 PM (4).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.04 PM (5).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.04 PM.jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (1).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (2).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (3).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (4).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (5).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (6).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (7).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (8).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (9).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (10).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (11).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (12).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (13).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (14).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (15).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (16).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (17).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (18).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (19).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (20).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (21).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (22).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (23).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (24).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (25).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (26).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (27).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM (28).jpeg",
-  "WhatsApp Image 2026-03-18 at 3.38.05 PM.jpeg"
-];
+const images = Array.from({ length: 35 }, (_, i) => `gallery-${i + 1}.jpeg`);
 
 export function Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -70,7 +34,7 @@ export function Gallery() {
               onClick={() => setSelectedImage(img)}
             >
               <img
-                src={`/${encodeURIComponent(img)}`}
+                src={`/${img}`}
                 alt={`Impression ${i + 1}`}
                 className="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
@@ -100,7 +64,7 @@ export function Gallery() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              src={`/${encodeURIComponent(selectedImage)}`}
+              src={`/${selectedImage}`}
               alt="Enlarged impression"
               className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
               onClick={(e) => e.stopPropagation()}
