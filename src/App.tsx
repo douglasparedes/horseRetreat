@@ -34,7 +34,6 @@ export default function App() {
             src="/gallery-1.jpeg" 
             alt="Ungarische Puszta Sonnenuntergang" 
             className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#3a2a22]/30 via-[#2A201A]/40 to-[#1A1512]/70"></div>
         </div>
@@ -139,7 +138,6 @@ export default function App() {
               src="/gallery-2.jpeg" 
               alt="Ein Raum, in dem du nichts erreichen musst" 
               className="w-full h-[600px] object-cover rounded-2xl shadow-sm"
-              referrerPolicy="no-referrer"
             />
           </FadeIn>
           
@@ -205,7 +203,6 @@ export default function App() {
                   src="/gallery-13.jpeg" 
                   alt="Noemi" 
                   className="w-64 h-64 rounded-full object-cover object-top mb-8 border-4 border-brand-bg shadow-sm"
-                  referrerPolicy="no-referrer"
                 />
                 <h3 className="text-3xl font-serif text-brand-text mb-4">Noemi</h3>
                 <p className="text-brand-text/80 font-light leading-relaxed">
@@ -219,7 +216,6 @@ export default function App() {
                   src="/lisa.jpeg" 
                   alt="Lisa" 
                   className="w-64 h-64 rounded-full object-cover object-top mb-8 border-4 border-brand-bg shadow-sm"
-                  referrerPolicy="no-referrer"
                 />
                 <h3 className="text-3xl font-serif text-brand-text mb-4">Lisa</h3>
                 <p className="text-brand-text/80 font-light leading-relaxed">
@@ -266,7 +262,6 @@ export default function App() {
                   src="/himalaya.jpeg" 
                   alt="Himalaya" 
                   className="w-full max-w-md mx-auto h-[600px] object-cover object-center rounded-2xl shadow-sm"
-                  referrerPolicy="no-referrer"
                 />
               </FadeIn>
               <FadeIn delay={0.2} className="space-y-6">
@@ -287,7 +282,6 @@ export default function App() {
                   src="/demi.jpeg" 
                   alt="Demi" 
                   className="w-full max-w-md mx-auto h-[600px] object-cover object-center rounded-2xl shadow-sm"
-                  referrerPolicy="no-referrer"
                 />
               </FadeIn>
               <FadeIn delay={0.2} className="md:order-1 space-y-6">
@@ -395,7 +389,6 @@ export default function App() {
               src="/gallery-5.jpeg" 
               alt="Puszta Landschaft" 
               className="w-full h-48 object-cover rounded-xl mt-auto"
-              referrerPolicy="no-referrer"
             />
           </FadeIn>
 

@@ -37,7 +37,6 @@ export function Gallery() {
                 src={`/${img}`}
                 alt={`Impression ${i + 1}`}
                 className="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
               />
             </motion.div>
           ))}
