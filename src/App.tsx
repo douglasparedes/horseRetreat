@@ -28,7 +28,7 @@ export default function App() {
     <div className="min-h-screen bg-brand-bg text-brand-text selection:bg-brand-highlight/30">
 
       {/* 1. HERO SECTION */}
-      <section className="relative h-[90vh] min-h-[600px] flex flex-col items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen md:h-[90vh] md:min-h-[600px] flex flex-col items-center justify-center overflow-hidden py-24 md:py-0">
         <div className="absolute inset-0 z-0">
           <img
             src="/gallery-1.jpeg"
@@ -38,12 +38,12 @@ export default function App() {
           <div className="absolute inset-0 bg-gradient-to-b from-[#3a2a22]/30 via-[#2A201A]/40 to-[#1A1512]/70"></div>
         </div>
 
-        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto mt-16">
+        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto mt-8 md:mt-16">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="text-6xl md:text-8xl lg:text-[9rem] font-serif text-white mb-6 tracking-widest font-light drop-shadow-sm"
+            className="text-4xl sm:text-6xl md:text-8xl lg:text-[9rem] font-serif text-white mb-6 tracking-widest font-light drop-shadow-sm"
           >
             ANKOMMEN
           </motion.h1>
@@ -51,7 +51,7 @@ export default function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="text-xl md:text-3xl text-white/90 font-serif italic mb-8 font-light tracking-wide drop-shadow-sm"
+            className="text-lg sm:text-xl md:text-3xl text-white/90 font-serif italic mb-8 font-light tracking-wide drop-shadow-sm"
           >
             Im Körper. In der Natur. Bei dir.
           </motion.p>
@@ -73,7 +73,7 @@ export default function App() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 bg-white/10 backdrop-blur-md border border-white/30 text-white px-10 py-4 rounded-full text-sm tracking-[0.2em] uppercase hover:bg-white hover:text-brand-text transition-all duration-500 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)]"
+              className="inline-flex w-full sm:w-auto items-center justify-center gap-3 bg-white/10 backdrop-blur-md border border-white/30 text-white px-10 py-4 rounded-full text-sm tracking-[0.2em] uppercase hover:bg-white hover:text-brand-text transition-all duration-500 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)]"
             >
               Platz anfragen
               <ArrowRight size={16} className="opacity-70" />
@@ -86,18 +86,18 @@ export default function App() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.2 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[90%] max-w-3xl bg-white/10 backdrop-blur-md border border-white/20 rounded-full py-4 px-6 md:px-12 flex flex-wrap justify-center md:justify-between items-center gap-4 text-white text-xs md:text-sm tracking-[0.15em] uppercase"
+          className="relative md:absolute bottom-8 md:left-1/2 md:-translate-x-1/2 w-[90%] max-w-3xl bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl md:rounded-full py-5 md:py-4 px-6 md:px-12 flex flex-col md:flex-row justify-center md:justify-between items-center gap-4 text-white text-[10px] sm:text-xs md:text-sm tracking-[0.15em] uppercase mt-12 md:mt-0"
         >
-          <span className="flex items-center gap-2"><MapPin size={16} /> Ungarische Puszta</span>
+          <span className="flex items-center gap-2 text-center"><MapPin size={16} className="shrink-0" /> Ungarische Puszta</span>
           <div className="hidden md:block w-px h-4 bg-white/30"></div>
-          <span className="flex items-center gap-2"><Clock size={16} /> 5 Tage</span>
+          <span className="flex items-center gap-2 text-center"><Clock size={16} className="shrink-0" /> 5 Tage</span>
           <div className="hidden md:block w-px h-4 bg-white/30"></div>
-          <span className="flex items-center gap-2"><Users size={16} /> max. 6 Teilnehmer:innen</span>
+          <span className="flex items-center gap-2 text-center"><Users size={16} className="shrink-0" /> max. 6 Teilnehmer:innen</span>
         </motion.div>
       </section>
 
       {/* 2. EINSTIEG – EMOTIONALE ABHOLUNG */}
-      <section className="py-24 md:py-32 px-6 bg-brand-alt">
+      <section className="py-16 md:py-32 px-6 bg-brand-alt">
         <div className="max-w-3xl mx-auto text-center">
           <FadeIn>
             <h2 className="text-3xl md:text-5xl font-serif italic text-brand-text mb-10 leading-tight">
@@ -117,7 +117,7 @@ export default function App() {
       </section>
 
       {/* Important Note Box */}
-      <section className="pb-24 px-6 bg-brand-alt">
+      <section className="pb-16 md:pb-24 px-6 bg-brand-alt">
         <FadeIn>
           <div className="max-w-3xl mx-auto bg-brand-highlight p-8 md:p-10 rounded-2xl text-center">
             <div className="inline-flex items-center justify-center w-12 h-12 bg-brand-text/10 rounded-full mb-6 text-brand-text">
@@ -131,13 +131,13 @@ export default function App() {
       </section>
 
       {/* 3. WAS DICH ERWARTET & 4. TRANSFORMATION */}
-      <section className="py-24 px-6 bg-brand-bg">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <section className="py-16 md:py-24 px-6 bg-brand-bg">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           <FadeIn>
             <img
               src="/gallery-2.jpeg"
               alt="Ein Raum, in dem du nichts erreichen musst"
-              className="w-full h-[600px] object-cover rounded-2xl shadow-sm"
+              className="w-full aspect-[4/5] md:h-[600px] object-cover rounded-2xl shadow-sm"
             />
           </FadeIn>
 
@@ -187,7 +187,7 @@ export default function App() {
       </section>
 
       {/* 5. METHODEN & 6. ÜBER UNS */}
-      <section className="py-24 px-6 bg-brand-alt">
+      <section className="py-16 md:py-24 px-6 bg-brand-alt">
         <div className="max-w-6xl mx-auto">
           <FadeIn className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-serif text-brand-text mb-6">Wer dich begleitet</h2>
@@ -196,7 +196,7 @@ export default function App() {
             </p>
           </FadeIn>
 
-          <div className="grid md:grid-cols-2 gap-16 mb-24">
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 mb-16 md:mb-24">
             <FadeIn>
               <div className="flex flex-col items-center text-center">
                 <img
@@ -245,7 +245,7 @@ export default function App() {
       </section>
 
       {/* 7. DIE PFERDE */}
-      <section className="py-24 px-6 bg-brand-bg">
+      <section className="py-16 md:py-24 px-6 bg-brand-bg">
         <div className="max-w-6xl mx-auto">
           <FadeIn className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-serif text-brand-text mb-6">Pferde als Resonanzraum,<br />unsere Co-Coaches</h2>
@@ -254,14 +254,14 @@ export default function App() {
             </p>
           </FadeIn>
 
-          <div className="space-y-24">
+          <div className="space-y-16 md:space-y-24">
             {/* Himalaya */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <FadeIn>
                 <img
                   src="/himalaya.jpeg"
                   alt="Himalaya"
-                  className="w-full max-w-md mx-auto h-[600px] object-cover object-center rounded-2xl shadow-sm"
+                  className="w-full max-w-md mx-auto aspect-[4/5] md:h-[600px] object-cover object-center rounded-2xl shadow-sm"
                 />
               </FadeIn>
               <FadeIn delay={0.2} className="space-y-6">
@@ -281,7 +281,7 @@ export default function App() {
                 <img
                   src="/demi.jpeg"
                   alt="Demi"
-                  className="w-full max-w-md mx-auto h-[600px] object-cover object-center rounded-2xl shadow-sm"
+                  className="w-full max-w-md mx-auto aspect-[4/5] md:h-[600px] object-cover object-center rounded-2xl shadow-sm"
                 />
               </FadeIn>
               <FadeIn delay={0.2} className="md:order-1 space-y-6">
@@ -313,7 +313,7 @@ export default function App() {
       </section>
 
       {/* 8. ABLAUF & 9. FÜR WEN & 10. ORT */}
-      <section className="py-24 px-6 bg-brand-alt">
+      <section className="py-16 md:py-24 px-6 bg-brand-alt">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-3 gap-12">
 
           {/* Ablauf */}
@@ -399,10 +399,10 @@ export default function App() {
       <Gallery />
 
       {/* 11. PREIS */}
-      <section className="py-24 px-6 bg-brand-bg">
+      <section className="py-16 md:py-24 px-6 bg-brand-bg">
         <div className="max-w-4xl mx-auto">
-          <FadeIn className="bg-brand-alt p-10 md:p-16 rounded-[2.5rem] shadow-sm text-center">
-            <h2 className="text-4xl font-serif text-brand-text mb-12">Deine Investition</h2>
+          <FadeIn className="bg-brand-alt p-8 md:p-16 rounded-[2rem] md:rounded-[2.5rem] shadow-sm text-center">
+            <h2 className="text-3xl md:text-4xl font-serif text-brand-text mb-12">Deine Investition</h2>
 
             <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16 mb-16">
               <div className="bg-white/50 p-8 rounded-2xl flex-1">
@@ -460,10 +460,10 @@ export default function App() {
       </section>
 
       {/* 12. CTA – HAUPTABSCHNITT */}
-      <section className="py-32 px-6 bg-brand-text text-brand-bg text-center">
+      <section className="py-20 md:py-32 px-6 bg-brand-text text-brand-bg text-center">
         <div className="max-w-3xl mx-auto">
           <FadeIn>
-            <h2 className="text-5xl md:text-6xl font-serif mb-8 font-light">Spürst du, dass es Zeit ist?</h2>
+            <h2 className="text-4xl md:text-6xl font-serif mb-8 font-light">Spürst du, dass es Zeit ist?</h2>
             <p className="text-xl font-light text-brand-bg/80 mb-12 leading-relaxed">
               Dann melde dich gern für ein unverbindliches Vorgespräch.<br />
               Wir schauen gemeinsam, ob ANKOMMEN gerade zu dir passt.
@@ -472,7 +472,7 @@ export default function App() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 bg-transparent border border-brand-bg/30 text-brand-bg px-12 py-5 rounded-full text-sm tracking-[0.2em] uppercase hover:bg-brand-bg hover:text-brand-text transition-all duration-500 hover:shadow-[0_0_30px_rgba(245,245,240,0.15)]"
+              className="inline-flex w-full sm:w-auto items-center justify-center gap-3 bg-transparent border border-brand-bg/30 text-brand-bg px-12 py-5 rounded-full text-sm tracking-[0.2em] uppercase hover:bg-brand-bg hover:text-brand-text transition-all duration-500 hover:shadow-[0_0_30px_rgba(245,245,240,0.15)]"
             >
               Kontaktiere uns
               <ArrowRight size={16} className="opacity-70" />
