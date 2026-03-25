@@ -26,20 +26,20 @@ const FadeIn = ({ children, delay = 0, className = "" }: { children: React.React
 export default function App() {
   return (
     <div className="min-h-screen bg-brand-bg text-brand-text selection:bg-brand-highlight/30">
-      
+
       {/* 1. HERO SECTION */}
       <section className="relative h-[90vh] min-h-[600px] flex flex-col items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/gallery-1.jpeg" 
-            alt="Ungarische Puszta Sonnenuntergang" 
+          <img
+            src="/gallery-1.jpeg"
+            alt="Ungarische Puszta Sonnenuntergang"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#3a2a22]/30 via-[#2A201A]/40 to-[#1A1512]/70"></div>
         </div>
-        
+
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto mt-16">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
@@ -47,7 +47,7 @@ export default function App() {
           >
             ANKOMMEN
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
@@ -55,7 +55,7 @@ export default function App() {
           >
             Im Körper. In der Natur. Bei dir.
           </motion.p>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.7 }}
@@ -63,13 +63,13 @@ export default function App() {
           >
             5 Tage, um aus dem Funktionieren auszusteigen und wieder zu spüren, was für dich wirklich stimmig ist.
           </motion.p>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.9 }}
           >
-            <a 
+            <a
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
@@ -82,7 +82,7 @@ export default function App() {
         </div>
 
         {/* Key Facts Bar */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.2 }}
@@ -101,15 +101,15 @@ export default function App() {
         <div className="max-w-3xl mx-auto text-center">
           <FadeIn>
             <h2 className="text-3xl md:text-5xl font-serif italic text-brand-text mb-10 leading-tight">
-              Vielleicht ist nichts falsch.<br/>
+              Vielleicht ist nichts falsch.<br />
               Und trotzdem fühlt es sich nicht ganz richtig an.
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
             <div className="space-y-6 text-lg md:text-xl font-light text-brand-text/80 leading-relaxed">
-              <p>Du funktionierst.<br/>Du triffst Entscheidungen.<br/>Du gehst deinen Weg.</p>
-              <p>Und gleichzeitig ist da dieses Gefühl,<br/>dass etwas leiser geworden ist.</p>
-              <p>Der Kontakt zum eigenen Körper.<br/>Zur eigenen Klarheit.<br/>Zu dem, was sich wirklich stimmig anfühlt.</p>
+              <p>Du funktionierst.<br />Du triffst Entscheidungen.<br />Du gehst deinen Weg.</p>
+              <p>Und gleichzeitig ist da dieses Gefühl,<br />dass etwas leiser geworden ist.</p>
+              <p>Der Kontakt zum eigenen Körper.<br />Zur eigenen Klarheit.<br />Zu dem, was sich wirklich stimmig anfühlt.</p>
               <p className="font-medium text-brand-text pt-4">ANKOMMEN ist eine Einladung, genau dort wieder anzusetzen.</p>
             </div>
           </FadeIn>
@@ -134,13 +134,13 @@ export default function App() {
       <section className="py-24 px-6 bg-brand-bg">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           <FadeIn>
-            <img 
-              src="/gallery-2.jpeg" 
-              alt="Ein Raum, in dem du nichts erreichen musst" 
+            <img
+              src="/gallery-2.jpeg"
+              alt="Ein Raum, in dem du nichts erreichen musst"
               className="w-full h-[600px] object-cover rounded-2xl shadow-sm"
             />
           </FadeIn>
-          
+
           <div>
             <FadeIn>
               <h2 className="text-3xl md:text-4xl font-serif text-brand-text mb-6">Ein Raum, in dem du nichts erreichen musst.</h2>
@@ -199,9 +199,9 @@ export default function App() {
           <div className="grid md:grid-cols-2 gap-16 mb-24">
             <FadeIn>
               <div className="flex flex-col items-center text-center">
-                <img 
-                  src="/gallery-13.jpeg" 
-                  alt="Noemi" 
+                <img
+                  src="/noemi.jpeg"
+                  alt="Noemi"
                   className="w-64 h-64 rounded-full object-cover object-top mb-8 border-4 border-brand-bg shadow-sm"
                 />
                 <h3 className="text-3xl font-serif text-brand-text mb-4">Noemi</h3>
@@ -212,9 +212,9 @@ export default function App() {
             </FadeIn>
             <FadeIn delay={0.2}>
               <div className="flex flex-col items-center text-center">
-                <img 
-                  src="/lisa.jpeg" 
-                  alt="Lisa" 
+                <img
+                  src="/lisa.jpeg"
+                  alt="Lisa"
                   className="w-64 h-64 rounded-full object-cover object-top mb-8 border-4 border-brand-bg shadow-sm"
                 />
                 <h3 className="text-3xl font-serif text-brand-text mb-4">Lisa</h3>
@@ -248,7 +248,7 @@ export default function App() {
       <section className="py-24 px-6 bg-brand-bg">
         <div className="max-w-6xl mx-auto">
           <FadeIn className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-serif text-brand-text mb-6">Pferde als Resonanzraum,<br/>unsere Co-Coaches</h2>
+            <h2 className="text-4xl md:text-5xl font-serif text-brand-text mb-6">Pferde als Resonanzraum,<br />unsere Co-Coaches</h2>
             <p className="text-xl font-light text-brand-text/80 max-w-3xl mx-auto">
               Die Pferde sind ein wesentlicher Teil dieses Retreats. Sie begegnen dir ohne Bewertung – und reagieren unmittelbar auf das, was wirklich da ist.
             </p>
@@ -258,9 +258,9 @@ export default function App() {
             {/* Himalaya */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <FadeIn>
-                <img 
-                  src="/himalaya.jpeg" 
-                  alt="Himalaya" 
+                <img
+                  src="/himalaya.jpeg"
+                  alt="Himalaya"
                   className="w-full max-w-md mx-auto h-[600px] object-cover object-center rounded-2xl shadow-sm"
                 />
               </FadeIn>
@@ -278,9 +278,9 @@ export default function App() {
             {/* Demi */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <FadeIn className="md:order-2">
-                <img 
-                  src="/demi.jpeg" 
-                  alt="Demi" 
+                <img
+                  src="/demi.jpeg"
+                  alt="Demi"
                   className="w-full max-w-md mx-auto h-[600px] object-cover object-center rounded-2xl shadow-sm"
                 />
               </FadeIn>
@@ -315,7 +315,7 @@ export default function App() {
       {/* 8. ABLAUF & 9. FÜR WEN & 10. ORT */}
       <section className="py-24 px-6 bg-brand-alt">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-3 gap-12">
-          
+
           {/* Ablauf */}
           <FadeIn className="bg-white/40 p-10 rounded-3xl">
             <h3 className="text-2xl font-serif text-brand-text mb-8">So sind die Tage aufgebaut</h3>
@@ -351,7 +351,7 @@ export default function App() {
                 </li>
               ))}
             </ul>
-            
+
             <h4 className="text-lg font-medium text-brand-text mb-4">Nicht passend, wenn du:</h4>
             <ul className="space-y-4">
               {[
@@ -385,9 +385,9 @@ export default function App() {
                 </li>
               ))}
             </ul>
-            <img 
-              src="/gallery-5.jpeg" 
-              alt="Puszta Landschaft" 
+            <img
+              src="/gallery-5.jpeg"
+              alt="Puszta Landschaft"
               className="w-full h-48 object-cover rounded-xl mt-auto"
             />
           </FadeIn>
@@ -403,7 +403,7 @@ export default function App() {
         <div className="max-w-4xl mx-auto">
           <FadeIn className="bg-brand-alt p-10 md:p-16 rounded-[2.5rem] shadow-sm text-center">
             <h2 className="text-4xl font-serif text-brand-text mb-12">Deine Investition</h2>
-            
+
             <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16 mb-16">
               <div className="bg-white/50 p-8 rounded-2xl flex-1">
                 <p className="text-sm uppercase tracking-widest text-brand-accent mb-4">Early Bird</p>
@@ -465,10 +465,10 @@ export default function App() {
           <FadeIn>
             <h2 className="text-5xl md:text-6xl font-serif mb-8 font-light">Spürst du, dass es Zeit ist?</h2>
             <p className="text-xl font-light text-brand-bg/80 mb-12 leading-relaxed">
-              Dann melde dich gern für ein unverbindliches Vorgespräch.<br/>
+              Dann melde dich gern für ein unverbindliches Vorgespräch.<br />
               Wir schauen gemeinsam, ob ANKOMMEN gerade zu dir passt.
             </p>
-            <a 
+            <a
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
@@ -489,13 +489,13 @@ export default function App() {
             <p className="text-brand-text/70 font-light mb-16 max-w-xl mx-auto">
               Die Anmeldung ist verbindlich. Eine Stornierung ist nicht möglich. Nach Rücksprache kann dein Platz auf eine Ersatzperson übertragen werden.
             </p>
-            
+
             <div className="w-24 h-px bg-brand-accent/50 mx-auto mb-16"></div>
-            
+
             <p className="text-3xl md:text-4xl font-serif italic text-brand-text mb-16">
-              Du musst nichts verändern.<br/>Du darfst wieder bei dir ankommen.
+              Du musst nichts verändern.<br />Du darfst wieder bei dir ankommen.
             </p>
-            
+
             <div className="text-sm text-brand-text/50 tracking-widest uppercase">
               © {new Date().getFullYear()} ANKOMMEN Retreat
             </div>
