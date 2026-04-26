@@ -53,7 +53,15 @@ export default function App() {
             transition={{ duration: 1, delay: 0.5 }}
             className="text-lg sm:text-xl md:text-3xl text-white/90 font-serif italic mb-8 font-light tracking-wide drop-shadow-sm"
           >
-            Im Körper. In der Natur. Bei dir.
+            Im Körper. In der Natur. In Dir.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.6 }}
+            className="text-xl md:text-2xl text-white/90 font-serif italic mb-8 font-light tracking-wide drop-shadow-sm"
+          >
+            02.09. - 06.09.2026
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}
@@ -408,12 +416,12 @@ export default function App() {
               <div className="bg-white/50 p-8 rounded-2xl flex-1">
                 <p className="text-sm uppercase tracking-widest text-brand-accent mb-4">Early Bird</p>
                 <p className="text-5xl font-serif text-brand-text mb-2">1.200 €</p>
-                <p className="text-brand-text/60 text-sm">bei Anmeldung bis 30.06.</p>
+                <p className="text-brand-text/60 text-sm">bei Anmeldung bis 31.05.</p>
               </div>
               <div className="bg-white/30 p-8 rounded-2xl flex-1">
                 <p className="text-sm uppercase tracking-widest text-brand-text/40 mb-4">Regulär</p>
-                <p className="text-4xl font-serif text-brand-text/70 mb-2">1.500 €</p>
-                <p className="text-brand-text/60 text-sm">ab 01.07.</p>
+                <p className="text-4xl font-serif text-brand-text/70 mb-2">1.700 €</p>
+                <p className="text-brand-text/60 text-sm">ab 01.06.</p>
               </div>
             </div>
 
