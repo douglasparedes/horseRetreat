@@ -412,16 +412,9 @@ export default function App() {
           <FadeIn className="bg-brand-alt p-8 md:p-16 rounded-[2rem] md:rounded-[2.5rem] shadow-sm text-center">
             <h2 className="text-3xl md:text-4xl font-serif text-brand-text mb-12">Deine Investition</h2>
 
-            <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16 mb-16">
-              <div className="bg-white/50 p-8 rounded-2xl flex-1">
-                <p className="text-sm uppercase tracking-widest text-brand-accent mb-4">Early Bird</p>
-                <p className="text-5xl font-serif text-brand-text mb-2">1.200 €</p>
-                <p className="text-brand-text/60 text-sm">bei Anmeldung bis 31.05.</p>
-              </div>
-              <div className="bg-white/30 p-8 rounded-2xl flex-1">
-                <p className="text-sm uppercase tracking-widest text-brand-text/40 mb-4">Regulär</p>
-                <p className="text-4xl font-serif text-brand-text/70 mb-2">1.700 €</p>
-                <p className="text-brand-text/60 text-sm">ab 01.06.</p>
+            <div className="flex justify-center mb-16">
+              <div className="bg-white/30 p-8 rounded-2xl max-w-sm w-full">
+                <p className="text-5xl font-serif text-brand-text">1.700 €</p>
               </div>
             </div>
 
